@@ -1,13 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="source/styles/styles.css">
+
+    <!-- page title -->
     <title>Home Page</title>
 </head>
+
 <body>
-    
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            Instagram
+        </a>
+
+        <!-- Create a new post button -->
+        <div>
+            <button class="btn btn-success " type="submit">Create new Post</button>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- TODO #2 -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Grid Switch Icons -->
+    <div class="btn-group">
+        <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+        </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+            class="glyphicon glyphicon-th"></span>Grid</a>
+    </div>
+
+    <!-- List View -->
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="d-grid gap-3">
+
+                    <!-- Primer imagen -->
+                    <div class="p-2 bg-light border">
+                        <div class="row">
+                            <div class="col-11">
+                                <h3>Image Title</h3>
+                            </div>
+                            <div class="col-1">
+                                <span>X/Y</span>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="/source/Images/birthday_cake.jpg"
+                            alt="Old picture of a birthday Cake">
+                        <p>
+                            <b>X Likes</b>
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aperiam, nihil quo explicabo
+                            ipsum quia vel harum cumque placeat voluptate ad ratione saepe est corrupti facere quas
+                            minus assumenda consectetur.</p>
+                    </div>
+
+                    <!-- Second Image -->
+                    <div class="p-2 bg-light border">
+                        <div class="row">
+                            <div class="col-11">
+                                <h3>Image Title</h3>
+                            </div>
+                            <div class="col-1">
+                                <span>X/Y</span>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="source/Images/lighthouse.jpg"
+                            alt="Lighthouse on a rock at the beach">
+                        <p>
+                            <b>X Likes</b>
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aperiam, nihil quo explicabo
+                            ipsum quia vel harum cumque placeat voluptate ad ratione saepe est corrupti facere quas
+                            minus assumenda consectetur.</p>
+
+                    </div>
+
+                    <!-- Third Image -->
+                    <div class="p-2 bg-light border">
+                        <div class="row">
+                            <div class="col-11">
+                                <h3>Image Title</h3>
+                            </div>
+                            <div class="col-1">
+                                <span>X/Y</span>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="source/Images/waking_up.jpg" alt="Guy Waking up with sunlight">
+                        <p>
+                            <b>X Likes</b>
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aperiam, nihil quo explicabo
+                            ipsum quia vel harum cumque placeat voluptate ad ratione saepe est corrupti facere quas
+                            minus assumenda consectetur.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+
+    </div>
+
+    <!-- Grid View -->
+
+    <!-- script -->
+    <script src="source/scripts/scripts.js"></script>
 </body>
+
 </html>
